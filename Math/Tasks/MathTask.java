@@ -3,10 +3,10 @@ package Math.Tasks;
 import java.util.concurrent.RecursiveTask;
 
 public abstract class MathTask<T> extends RecursiveTask<T> {
-    float[] vector_a;
-    int low;
-    int high;
-    int MIN_THRESH;
+    protected float[] vector_a;
+    protected int low;
+    protected int high;
+    protected int MIN_THRESH;
 
     public MathTask(float[] vector_a) {
         this.vector_a = vector_a;
@@ -18,7 +18,7 @@ public abstract class MathTask<T> extends RecursiveTask<T> {
         high = vector_a.length;
     }
 
-    MathTask(int low, int high) {
+    protected MathTask(int low, int high) {
         this.low = low;
         this.high = high;
     }
@@ -40,7 +40,7 @@ public abstract class MathTask<T> extends RecursiveTask<T> {
             }
     }
 
-    abstract MathTask<T> createSubTask(int low, int high);
-    abstract T computeDirectly();
-    abstract T combineResults(T left, T right);
+    protected abstract MathTask<T> createSubTask(int low, int high);
+    protected abstract T computeDirectly();
+    protected abstract T combineResults(T left, T right);
 }

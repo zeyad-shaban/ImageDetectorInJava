@@ -1,16 +1,20 @@
+import NeuralNetwork.Layer;
+import NeuralNetwork.Activations.*;
 import Math.VectorizedMath.VectorizedMath;
-import Math.NeuralMath.NeuralMath;
 
 public class Main {
     public static void main(String[] args) {
-        float[] vector_a = {1,2,3};
-        float[][] vector_b = {
-            {4, 5, 6},
-            {7, 8, 9},
-        };
-        // todo add bias
+        float[] input = { 1, 2, 3 };
 
-        float[] result = NeuralMath.computeHiddenLayer(vector_a, vector_b);
+        float[][] weights = {
+                { 4, 5, 20 },
+                { 10, 8, 9 },
+        };
+        float[] bias = { 8, 30 };
+
+        Layer layer1 = new Layer(weights, bias, new Softmax());
+
+        float[] result = layer1.compute(input);
 
         System.out.println(result);
     }
