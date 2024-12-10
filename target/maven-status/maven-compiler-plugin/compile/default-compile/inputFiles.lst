@@ -1,0 +1,16 @@
+C:\Users\zeyad\Desktop\Workspace\Code\ImageDetectorInJava\src\main\java\Main.java
+C:\Users\zeyad\Desktop\Workspace\Code\ImageDetectorInJava\src\main\java\NeuralNetwork\Activations\Activation.java
+C:\Users\zeyad\Desktop\Workspace\Code\ImageDetectorInJava\src\main\java\NeuralNetwork\Activations\BatchNormalization1d.java
+C:\Users\zeyad\Desktop\Workspace\Code\ImageDetectorInJava\src\main\java\NeuralNetwork\Activations\ReLU.java
+C:\Users\zeyad\Desktop\Workspace\Code\ImageDetectorInJava\src\main\java\NeuralNetwork\Activations\Softmax.java
+C:\Users\zeyad\Desktop\Workspace\Code\ImageDetectorInJava\src\main\java\NeuralNetwork\Layer\Layer.java
+C:\Users\zeyad\Desktop\Workspace\Code\ImageDetectorInJava\src\main\java\NeuralNetwork\Math\Math.java
+C:\Users\zeyad\Desktop\Workspace\Code\ImageDetectorInJava\src\main\java\NeuralNetwork\Math\Tasks\BiMathTask\BiMathTask.java
+C:\Users\zeyad\Desktop\Workspace\Code\ImageDetectorInJava\src\main\java\NeuralNetwork\Math\Tasks\BiMathTask\ScalarBiMathTask.java
+C:\Users\zeyad\Desktop\Workspace\Code\ImageDetectorInJava\src\main\java\NeuralNetwork\Math\Tasks\BiMathTask\VectorBiMathTask.java
+C:\Users\zeyad\Desktop\Workspace\Code\ImageDetectorInJava\src\main\java\NeuralNetwork\Math\Tasks\MathTask.java
+C:\Users\zeyad\Desktop\Workspace\Code\ImageDetectorInJava\src\main\java\NeuralNetwork\Math\Tasks\UnaryMathTask\ScalarUnaryMathTask.java
+C:\Users\zeyad\Desktop\Workspace\Code\ImageDetectorInJava\src\main\java\NeuralNetwork\Math\Tasks\UnaryMathTask\UnaryMathTask.java
+C:\Users\zeyad\Desktop\Workspace\Code\ImageDetectorInJava\src\main\java\NeuralNetwork\Math\Tasks\UnaryMathTask\VectorUnaryMathTask.java
+C:\Users\zeyad\Desktop\Workspace\Code\ImageDetectorInJava\src\main\java\NeuralNetwork\Math\VectorizedMath\VectorizedMath.java
+C:\Users\zeyad\Desktop\Workspace\Code\ImageDetectorInJava\src\main\java\NeuralNetwork\NeuralNetwork.java
