@@ -25,11 +25,6 @@ public class Layer {
     public void load_params(float[][] weights, float[] bias) {
         this.weights = weights;
         this.bias = bias;
-
-        this.activations = new Activation[activations.length];
-        for (int i = 0; i < this.activations.length; ++i) {
-            this.activations[i] = activations[i]; // todo deep copy instead
-        }
     }
 
     public float[] compute(float[] input) {

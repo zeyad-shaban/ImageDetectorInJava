@@ -1,11 +1,12 @@
 package NeuralNetwork;
+
 import NeuralNetwork.Layer.*;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
-public class NeuralNetwork {  
+public class NeuralNetwork {
     public Layer[] layers;
 
     public NeuralNetwork(Layer... layers) {
@@ -60,5 +61,15 @@ public class NeuralNetwork {
         }
 
         return output;
+    }
+
+    public float[] forward(float[][] input) {
+        float[] input_flattened = new float[input.length * input[0].length];
+
+        for (int i = 0; i < input.length; ++i)
+            for (int j = 0; j < input[0].length; ++j)
+                input_flattened[i * input.length + j] = input[i][j];
+
+        return forward(input_flattened);
     }
 }
