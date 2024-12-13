@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ImageDrawer</string>
+    <string name="home_title">Digit Predictor</string>
+    <string name="predict_button">Predict</string>
+    <string name="connect_server">Connect</string>
+    <string name="hint_ip_address">192.168.1.9:8000</string>
+    <string name="eraser_btn">X</string>
+</resources>
