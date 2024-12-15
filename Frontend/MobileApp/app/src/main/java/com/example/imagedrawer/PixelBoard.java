@@ -75,6 +75,12 @@ public class PixelBoard extends View {
 
             if (x >= 0 && x < 28 && y >= 0 && y < 28) {
                 pixels[x][y] = 1;
+
+                if (y > 0) pixels[x][y - 1] = 1;
+                if (x < 27) pixels[x + 1][y] = 1;
+                if (y < 27) pixels[x][y + 1] = 1;
+                if (x > 0) pixels[x - 1][y] = 1;
+
                 invalidate();
             }
         }
