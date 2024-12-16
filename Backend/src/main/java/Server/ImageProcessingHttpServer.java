@@ -19,7 +19,7 @@ import java.net.InetSocketAddress;
 public class ImageProcessingHttpServer {
     private static NeuralNetwork model;
 
-    public static void start(String[] args, NeuralNetwork model) throws IOException {
+    public static void start(NeuralNetwork model) throws IOException {
         ImageProcessingHttpServer.model = model;
         HttpServer server = HttpServer.create(new InetSocketAddress(8000), 0);
 

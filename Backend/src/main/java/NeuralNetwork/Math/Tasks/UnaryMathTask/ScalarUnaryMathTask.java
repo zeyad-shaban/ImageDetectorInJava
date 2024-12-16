@@ -13,14 +13,14 @@ public class ScalarUnaryMathTask extends UnaryMathTask<Float> {
 
     @Override
     protected ScalarUnaryMathTask createSubTask(int low, int high) {
-        return new ScalarUnaryMathTask(vector_a, func, low, high);
+        return new ScalarUnaryMathTask(getVectorA(), func, low, high);
     }
 
     @Override
     protected Float computeDirectly() {
         Float result = 0.0f;
-        for (int i = 0; i < vector_a.length; ++i) {
-            result += func.apply(vector_a[i]);
+        for (int i = 0; i < getVectorA().length; ++i) {
+            result += func.apply(getVectorA()[i]);
         }
 
         return result;

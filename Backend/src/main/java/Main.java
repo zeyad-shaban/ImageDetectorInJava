@@ -8,12 +8,12 @@ import NeuralNetwork.*;
 public class Main {
   public static void main(String[] args) {
     NeuralNetwork model = createNeuralModel();
-    startServer(args, model);
+    startServer(model);
   }
   
-  public static void startServer(String[] args, NeuralNetwork model) {
+  public static void startServer(NeuralNetwork model) {
     try {
-      ImageProcessingHttpServer.start(args, model);
+      ImageProcessingHttpServer.start(model);
     } catch (IOException e) {
       e.printStackTrace();
     }

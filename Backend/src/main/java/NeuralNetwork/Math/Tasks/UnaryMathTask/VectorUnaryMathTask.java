@@ -13,14 +13,14 @@ public class VectorUnaryMathTask extends UnaryMathTask<float[]> {
 
     @Override
     protected VectorUnaryMathTask createSubTask(int low, int high) {
-        return new VectorUnaryMathTask(vector_a, func, low, high);
+        return new VectorUnaryMathTask(getVectorA(), func, low, high);
     }
 
     @Override
     protected float[] computeDirectly() {
-        float[] result = new float[this.vector_a.length];
-        for (int i = 0; i < this.vector_a.length; ++i)
-            result[i] += func.apply(this.vector_a[i]);
+        float[] result = new float[this.getVectorA().length];
+        for (int i = 0; i < this.getVectorA().length; ++i)
+            result[i] += func.apply(this.getVectorA()[i]);
 
         return result;
     }

@@ -13,7 +13,7 @@ public abstract class UnaryMathTask<T> extends MathTask<T> {
 
     UnaryMathTask(float[] vector_a, Function<Float, Float> func, int low, int high) {
         this(vector_a, func);
-        this.low = low;
-        this.high = high;
+        this.setLow(low);
+        this.setHigh(high);
     }
 }

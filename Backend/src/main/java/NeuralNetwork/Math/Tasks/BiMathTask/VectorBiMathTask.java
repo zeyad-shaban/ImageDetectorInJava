@@ -14,14 +14,14 @@ public class VectorBiMathTask extends BiMathTask<float[]> {
 
     @Override
     protected VectorBiMathTask createSubTask(int low, int high) {
-        return new VectorBiMathTask(vector_a, vector_b, func, low, high);
+        return new VectorBiMathTask(getVectorA(), getVectorB(), getFunc(), low, high);
     }
 
     @Override
     protected float[] computeDirectly() {
-        float[] result = new float[vector_a.length];
-        for (int i = 0; i < vector_a.length; ++i) {
-            result[i] = func.apply(vector_a[i], vector_b[i]);
+        float[] result = new float[getVectorA().length];
+        for (int i = 0; i < getVectorA().length; ++i) {
+            result[i] = getFunc().apply(getVectorA()[i], getVectorB()[i]);
         }
 
         return result;

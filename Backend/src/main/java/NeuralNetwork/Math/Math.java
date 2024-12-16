@@ -2,6 +2,7 @@ package NeuralNetwork.Math;
 
 abstract public class Math {
     public final static float E = 2.718281828459045f;
+    public final static float PI = 3.14159265358979f;
 
     public static float Max(float a, float b) {
         if (a > b)
@@ -18,8 +19,9 @@ abstract public class Math {
 
     public static int argMax(float[] arr) {
         int max_idx = 0;
-        for(int i = 1; i < arr.length; ++ i){
-            if(arr[i] > arr[max_idx]) max_idx = i;
+        for (int i = 1; i < arr.length; ++i) {
+            if (arr[i] > arr[max_idx])
+                max_idx = i;
         }
 
         return max_idx;

@@ -7,7 +7,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 
 public class NeuralNetwork {
-    public Layer[] layers;
+    private Layer[] layers;
 
     public NeuralNetwork(Layer... layers) {
         this.layers = new Layer[layers.length];

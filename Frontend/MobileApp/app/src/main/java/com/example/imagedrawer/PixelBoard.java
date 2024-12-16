@@ -17,6 +17,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class PixelBoard extends View {
     private int[][] pixels = new int[28][28]; // Initialize with 0s (black)
+    private Paint paint = new Paint();
 
     public int[][] getPixels() {
         int[][] pixelsTrans = new int[28][28];
@@ -42,7 +43,6 @@ public class PixelBoard extends View {
         invalidate();
     }
 
-    private Paint paint = new Paint();
 
     public PixelBoard(Context context, AttributeSet attrs) {
         super(context, attrs);

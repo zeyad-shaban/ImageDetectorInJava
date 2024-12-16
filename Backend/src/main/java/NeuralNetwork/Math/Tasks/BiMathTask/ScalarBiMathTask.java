@@ -13,14 +13,14 @@ public class ScalarBiMathTask extends BiMathTask<Float> {
 
     @Override
     protected ScalarBiMathTask createSubTask(int low, int high) {
-        return new ScalarBiMathTask(vector_a, vector_b, func, low, high);
+        return new ScalarBiMathTask(this.getVectorA(), this.getVectorB(), this.getFunc() , low, high);
     }
 
     @Override
     protected Float computeDirectly() {
         Float result = 0.0f;
-        for (int i = 0; i < vector_a.length; ++i) {
-            result += func.apply(vector_a[i], vector_b[i]);
+        for (int i = 0; i < this.getVectorA().length; ++i) {
+            result += this.getFunc().apply(this.getVectorA()[i], this.getVectorB()[i]);
         }
 
         return result;
